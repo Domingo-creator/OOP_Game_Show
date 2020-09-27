@@ -9,62 +9,83 @@
     </head>
     <body>
         <h1 id="game-title">OOP Game Show</h1>
-        <h2 id="timer">--</h2>
-        <h2 id="category">&nbsp</h2>
+        <div id="new-game-window">
+            <p id="game-result"></p>
+            <p>Would you like to start a new game?</p>
+            <button id="new-game-button">New Game</button>
+        </div>
+        <div id="game-status-container">
+            <p id="timer">--</p>
+            <p id="category">&nbsp</p>
+        </div>
+        <div id= "remaining-guesses-container">
+            <div id= "strikes-bar"></div>
+            <label for="remaining-guesses">Strikes Left:</label>
+            <span id="remaining-guesses"></span>
+        </div>    
+        
+        <div id="gameboard-container">
+            <span id="current_guess_container">
+                <label for="current-guess">Your Guess:</label><br>
+                <span id="current-guess"></span>
+            </span>
+            <span class="gameboard">
+                <span class="empty-space">&nbsp</span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
 
-        <div class="gameboard">
-            <span class="empty-space">&nbsp</span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-
-            <span class="empty-space">&nbsp</span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            
-            <span class="empty-space">&nbsp</span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            
-            <span class="empty-space">&nbsp</span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <span class="empty-space"></span>
-            <br>
+                <span class="empty-space">&nbsp</span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                
+                <span class="empty-space">&nbsp</span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                
+                <span class="empty-space">&nbsp</span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+                <span class="empty-space"></span>
+            </span>
+            <span id="incorrect-letters-container">
+                <label for="incorrect-letters">Incorrect Letters: </label><br>
+                <p id='incorrect-letters'></p>
+            </span>
         </div>
 
         <div class="keyboard">
@@ -99,10 +120,6 @@
             ><span class="key">N</span
             ><span class="key">M</span>
         </div>
-        <label for="remaining-guesses">Guesses Left: </label>
-        <span id="remaining-guesses"></span><br>
-        <label for="incorrect-letters">Incorrect Letters: </label>
-        <span id="incorrect-letters"></span>
 
         <script src="js/app.js" ></script>
     </body>
